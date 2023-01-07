@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    border:1px solid red;
 }
 
 html {
@@ -61,14 +62,17 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
+    border:2px solid red;
+    color:white;
 }
-
 h1, h2, h3, h4, h5, h6, p, a, i {
     text-decoration: none;
 }
 
 h1 {
     font-size: 7.5rem;
+    color: white;
+    
 }
 
 h2 {
@@ -82,7 +86,11 @@ h3 {
 p, a {
     font-size: 3rem;
 }
-
+a{
+    color:white;
+    display: flex;
+    justify-content: space-around;
+}
 /* header section */
 header {
     width: 100%;
@@ -91,13 +99,29 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
+    
+    
+    
 }
 
+
+nav div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    width:100%;
+    
+}
+.icons{
+    display: flex;
+    
+}
 /* spacers */
 .spacer {
     width: 100%;
     height: 20vh;
-    background-color: rgb(0, 4, 17);
+    background-color:rgb(0, 4, 17);
 }
 .spacer-sm {
     width: 100%;
@@ -111,6 +135,21 @@ header {
     height: 100vh;
     text-align: center;
     background-color: rgb(0, 4, 17);
+    color:antiquewhite;
+}
+.foodipics{
+    margin:40px;
+}
+.images{
+    display:flex;
+   
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    margin:70px;
+}
+.images img{
+   margin:20px;
 }
 
 /* about us section */
@@ -194,6 +233,18 @@ footer {
     height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: black;
+    display:flex;
+}
+footer nav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+}
+footer button{
+   
+ margin-inline-start: auto;
+   background-color:black;
 }
 
 /* mobile media query */
